@@ -1,0 +1,161 @@
+@startuml
+'https://plantuml.com/class-diagramну типа
+
+class MP3_Parser {
+    +void Parsing_Frames(string);
+    +void Parse_File(string);
+    +vector<string> Get(string);
+    +void Print_All_Frames();
+    +void Print_List_Frames();
+
+    +map<string, vector<string>> Frames_Data;
+    -string _file_name;
+}
+
+abstract class Frame {
+    +vector Parse(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|-- Unique_file_identifier
+class Unique_file_identifier {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Text_information_frames
+class Text_information_frames {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    URL_link_frames
+class URL_link_frames {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Event_timing_codes
+class Event_timing_codes {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Unsynchronised_lyrics
+class Unsynchronised_lyrics {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Synchronised_lyrics
+class Synchronised_lyrics {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Comments
+class Comments {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Relative_volume_adjustment
+class Relative_volume_adjustment {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Equalisation
+class Equalisation {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Play_counter
+class Play_counter {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Popularimeter
+class Popularimeter {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Recommended_buffer_size
+class Recommended_buffer_size {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Position_synchronisation_frame
+class Position_synchronisation_frame {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Terms_of_use
+class Terms_of_use {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Ownership_frame
+class Ownership_frame {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Commercial_frame
+class Commercial_frame {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Encryption_method_registration
+class Encryption_method_registration {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Group_identification_registration
+class Group_identification_registration {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Private_frame
+class Private_frame {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+Frame <|--    Seek_frame
+class Seek_frame {
+    +vector Get(string)
+    +vector List_Frames
+    +void Fill_Methods()
+}
+
+@enduml
