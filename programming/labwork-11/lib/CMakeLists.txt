@@ -1,0 +1,1 @@
+add_library(stl stl_algorithms.cpp)
