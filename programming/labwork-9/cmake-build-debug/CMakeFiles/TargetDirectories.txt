@@ -1,0 +1,3 @@
+C:/prog/labwork-9(new)/cmake-build-debug/CMakeFiles/labwork_9_new_.dir
+C:/prog/labwork-9(new)/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/prog/labwork-9(new)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
